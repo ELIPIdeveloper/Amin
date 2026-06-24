@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="محمد امین مرادی، متولد ۱۳۸۳ در کرمانشاه، طراح گرافیک، نقاش، برنامه‌نویس، بازی‌ساز و توسعه‌دهنده نرم‌افزار است.">
-  <title>محمد امین مرادی | برنامه‌نویس و توسعه‌دهنده</title>
+  <title>محمد امین مرادی | برنامه‌نویس و توسعه‌دهندهی</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 
@@ -14,15 +14,15 @@
     :root {
       --bg:        #000000;
       --text:      #f5f5f7;
-      --sub:       rgba(245,245,247,1);
-      --muted:     rgba(245,245,247,1);
+      --sub:       rgba(245,245,247,0.6);
+      --muted:     rgba(245,245,247,0.35);
       --blue:      #2997ff;
       --purple:    #bf5af2;
       --gold:      #ffd60a;
       --cyan:      #5ac8fa;
       --green:     #30d158;
-      --border:    rgba(255,255,255,1);
-      --card-bg:   rgba(255,255,255,1);
+      --border:    rgba(255,255,255,0.08);
+      --card-bg:   rgba(255,255,255,0.04);
     }
 
     html { scroll-behavior: smooth; }
@@ -396,21 +396,21 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(41,151,255,1) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(41,151,255,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
     .glow-purple::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(191,90,242,1) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(191,90,242,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
     .glow-gold::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(255,214,10,1) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(255,214,10,0.05) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -1037,9 +1037,9 @@
         // Blue halo — upper-right
         bx: 0.72, by: 0.22,
         r: 0.52,           // radius as fraction of min(W,H)
-        thickness: 0.12,   // how wide the glowing band is (fraction of r)
+        thickness: 0.19,   // how wide the glowing band is (fraction of r)
         color: [41, 151, 255],
-        alpha: 0.155,
+        alpha: 0.055,
         speed: 0.00008,
         phase: 0,
         parallax: 0.04,
@@ -1048,9 +1048,9 @@
         // Purple halo — lower-left
         bx: 0.28, by: 0.78,
         r: 0.46,
-        thickness: 0.14,
+        thickness: 0.19,
         color: [191, 90, 242],
-        alpha: 0.148,
+        alpha: 0.048,
         speed: 0.000065,
         phase: 3.4,
         parallax: -0.035,
